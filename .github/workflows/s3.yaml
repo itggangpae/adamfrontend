@@ -25,7 +25,7 @@ jobs:
           npm run build
 
       - name: S3에 업로드
-        run: aws s3 sync build/ s3://adamfrontend -- acl public-read
+        run: aws s3 sync build/ s3://adamfrontend --acl public-read
         env:
             AWS_ACCESS_KEY_ID: AKIA264FV5MWPUHV7O7S
             AWS_SECRET_ACCESS_KEY: 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
