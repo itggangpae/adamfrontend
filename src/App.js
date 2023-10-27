@@ -47,7 +47,7 @@ function App() {
 }
 
 return <div>
-    <div>진행 상황 {progress}%</div>
+    <div>진행 상황을 수정 {progress}%</div>
     <input type="file" onChange={handleFileInput}/>
     <button onClick={() => uploadFile(selectedFile)}> Upload to S3</button>
 </div>
